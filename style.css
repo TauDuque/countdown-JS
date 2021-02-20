@@ -109,6 +109,7 @@ ul {
 }
 
 li {
+  display: inline-block;
   font-size: 30px;
   list-style-type: none;
   padding: 10px;
@@ -117,7 +118,7 @@ li {
 
 li span {
   display: block;
-  font-size: 80px;
+  font-size: 50px;
   text-align: center;
 }
 
@@ -125,6 +126,32 @@ li span {
 .complete {
   position: relative;
   top: 60px;
+}
+.complete-title {
+  animation: complete 4s infinite;
+}
+
+@keyframes complete {
+  0% {
+    color: rgb(252, 23, 23);
+  }
+
+  25% {
+    color: rgb(252, 122, 23);
+  }
+
+  50% {
+    color: rgb(252, 225, 23);
+    transform: scale(1.5);
+  }
+
+  75% {
+    color: rgb(157, 181, 8);
+  }
+
+  100% {
+    color: rgb(169, 243, 19);
+  }
 }
 
 /* Media Query: Large Smartphone (Vertical) */
@@ -170,10 +197,11 @@ li span {
   }
 
   li {
-    font-size: 15px;
+    padding: 4px;
+    font-size: 13px;
   }
 
   li span {
-    font-size: 40px;
+    font-size: 20px;
   }
 }
