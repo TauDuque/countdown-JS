@@ -33,7 +33,7 @@ function updateDom() {
     const distance = countdownValue - now;
 
     const days = Math.floor(distance / day);
-    const hours = Math.floor((distance % day) / hour); // esclarecer o uso desse sinal de percentual
+    const hours = Math.floor((distance % day) / hour); 
     const minutes = Math.floor((distance % hour) / minute);
     const seconds = Math.floor((distance % minute) / second);
 
